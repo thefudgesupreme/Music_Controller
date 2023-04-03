@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import main
+from .views import RoomAPIView
 
 urlpatterns = [
-    path('home/',main)
+    path('home/',RoomAPIView.as_view())
 ]
